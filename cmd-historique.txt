@@ -1,0 +1,237 @@
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06
+$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06
+$ git init
+Initialized empty Git repository in C:/Users/Annie/veilleTechnologique/exercice06/.git/
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        img/
+        index.html
+        styles/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git add .
+warning: LF will be replaced by CRLF in img/versdeterre.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git push https://github.com/pootannie/vt-exercice06 master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/pootannie/vt-exercice06'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git branch
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git commit -m "initialisation de l'exercice"
+[master (root-commit) 237628d] initialisation de l'exercice
+ 23 files changed, 964 insertions(+)
+ create mode 100644 img/1.jpg
+ create mode 100644 img/2.jpg
+ create mode 100644 img/3.png
+ create mode 100644 img/4.jpg
+ create mode 100644 img/5.jpg
+ create mode 100644 img/6.jpg
+ create mode 100644 img/bg.jpg
+ create mode 100644 img/drone_a.png
+ create mode 100644 img/drone_b.png
+ create mode 100644 img/exercice06.svg
+ create mode 100644 img/kiwi.svg
+ create mode 100644 img/logo.png
+ create mode 100644 img/logo.svg
+ create mode 100644 img/luigi.svg
+ create mode 100644 img/mounts_1.png
+ create mode 100644 img/mounts_2.png
+ create mode 100644 img/mounts_3.png
+ create mode 100644 img/mounts_4.png
+ create mode 100644 img/robot.svg
+ create mode 100644 img/versdeterre.svg
+ create mode 100644 index.html
+ create mode 100644 styles/style.css
+ create mode 100644 styles/style.less
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git branch
+* master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git push https://github.com/pootannie/vt-exercice06 master
+Counting objects: 27, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (27/27), 4.15 MiB | 710.00 KiB/s, done.
+Total 27 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/pootannie/vt-exercice06
+ * [new branch]      master -> master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        cmd-historique.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git add .
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   cmd-historique.txt
+        modified:   index.html
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git push https://github.com/pootannie/vt-exercice06 master
+Everything up-to-date
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   cmd-historique.txt
+        modified:   index.html
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmd-historique.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        acces.txt
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git add .
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   acces.txt
+        new file:   cmd-historique.txt
+        modified:   index.html
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git push https://github.com/pootannie/vt-exercice06 master
+Everything up-to-date
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git commit -m "final"
+[master 1863423] final
+ 5 files changed, 539 insertions(+), 75 deletions(-)
+ create mode 100644 acces.txt
+ create mode 100644 cmd-historique.txt
+ rewrite styles/style.less (100%)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Annie@Annie MINGW64 ~/veilleTechnologique/exercice06 (master)
+$ git push https://github.com/pootannie/vt-exercice06 master
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 4.52 KiB | 0 bytes/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pootannie/vt-exercice06
+   237628d..1863423  master -> master
