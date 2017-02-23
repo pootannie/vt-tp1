@@ -420,3 +420,110 @@ $ git add .
 Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
 $ git push https://github.com/pootannie/vt-tp1 master
 Everything up-to-date
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git log
+commit 72f4d60e29468acde762ede1f3473c782e996d54
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Feb 21 17:14:37 2017 -0500
+
+    initialisation du projet + ajout des svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   cmd-historique.txt
+        modified:   index.html
+        modified:   styles/style.css
+        modified:   styles/style.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "finalisation du projet"
+[master 8ea9543] finalisation du projet
+ 4 files changed, 257 insertions(+), 26 deletions(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git add .
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "fini html"
+[master debd42c] fini html
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github/pootannie/vt-tp1
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github/pootannie/vt-tp1 master
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github/pootannie/vt-tp1 master
+fatal: unable to access 'https://github/pootannie/vt-tp1/': Couldn't resolve host 'github'
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github.com/pootannie/vt-tp1 master
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 2.32 KiB | 0 bytes/s, done.
+Total 10 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/pootannie/vt-tp1
+   72f4d60..debd42c  master -> master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ add .
+bash: add: command not found
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "fini less"
+[master 716e64b] fini less
+ 2 files changed, 9 insertions(+), 17 deletions(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git log
+commit 716e64b5f17bbd1ec81e7f04612de62ee756b8aa
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 23 11:31:14 2017 -0500
+
+    fini less
+
+commit debd42c11d2ebb9607e1017f41dcd133ae5670d7
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 23 11:27:36 2017 -0500
+
+    fini html
+
+commit 8ea95432f49dd5a1aacd4e457b6d1bad52f6736e
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 23 11:23:35 2017 -0500
+
+    finalisation du projet
+
+commit 72f4d60e29468acde762ede1f3473c782e996d54
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Feb 21 17:14:37 2017 -0500
+
+    initialisation du projet + ajout des svg
