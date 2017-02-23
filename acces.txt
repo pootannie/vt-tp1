@@ -1,2 +1,2 @@
-github: https://github.com/pootannie/vt-exercice06
-site web: http://veille.annievu.ca/exercice06/index.html
+github: https://github.com/pootannie/vt-tp1
+site web: http://veille.annievu.ca/TP1/index.html

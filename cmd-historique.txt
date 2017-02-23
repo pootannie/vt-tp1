@@ -527,3 +527,69 @@ Author: Annie Vu <annievu9@gmail.com>
 Date:   Tue Feb 21 17:14:37 2017 -0500
 
     initialisation du projet + ajout des svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "ajout prefixes css"
+[master 2235d2b] ajout prefixes css
+ 2 files changed, 168 insertions(+), 18 deletions(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github.com/pootannie/vt-tp1 master
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 2.02 KiB | 0 bytes/s, done.
+Total 10 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/pootannie/vt-tp1
+   debd42c..2235d2b  master -> master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git add .
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "dernieres retouches"
+[master 3323956] dernieres retouches
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git log
+commit 3323956c02eecc922327991e36e00b2e383c98b9
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 23 11:35:16 2017 -0500
+
+    dernieres retouches
+
+commit 2235d2b112ddaf6b372467f0a0a937611e7bba2d
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 23 11:33:37 2017 -0500
+
+    ajout prefixes css
+
+commit 716e64b5f17bbd1ec81e7f04612de62ee756b8aa
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 23 11:31:14 2017 -0500
+
+    fini less
+
+commit debd42c11d2ebb9607e1017f41dcd133ae5670d7
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Thu Feb 23 11:27:36 2017 -0500
+
+    fini html
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github.com/pootannie/vt-tp1 master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 304 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pootannie/vt-tp1
+   2235d2b..3323956  master -> master
