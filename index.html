@@ -34,27 +34,23 @@
 
 		            <div class="container">
 			            <h1>The Team</h1>
-			            <p></p>
-						<div class="row">
-							<!--<div class="col-xs-3"><img src="img/kiwi.svg" class="img-responsive" alt=""></div>-->
+						<g class="row">
 							<div>
 								<svg height="100" width="200" class="svg1">
 									<path d="M0 0 L100 0 100 100 0 100 Z" fill="white"/>
 								</svg>
 							</div>
-							<!--<div class="col-xs-3"><img src="img/robot.svg" class="img-responsive" alt=""></div>-->
 							<div>
-								<svg height="200" width="200" class="svg3">
+								<svg height="200" width="200" class="svg2">
 									<path d ="M50 50 Q50 70 75 150 T150 150 Z" stroke="white" stroke-width="5" fill="transparent"/>
 								</svg>
 							</div>
-							<div class="col-xs-3"><img src="img/versdeterre.svg" class="svg4" alt=""></div>
-							<div class="col-xs-3"><img src="img/luigi.svg" class="img-responsive" alt=""></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-3"><img src="img/robot.svg" class="img-responsive" alt=""></div>
-							<div class="col-xs-3"><img src="img/kiwi.svg" class="img-responsive" alt=""></div>
-						</div>
+							<div><img src="img/versdeterre.svg" class="svg3" alt=""></div>
+						</g>
+						<g class="row">
+							<div><img src="img/robot.svg" class="svg4"></div>
+							<div><img src="img/kiwi.svg" class="svg5"></div>
+						</g>
 		            </div>
 
 		            <p>
@@ -76,8 +72,42 @@
     <div class="base"></div>
 </div>
 
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>');</script>
-<script src="js/scripts.js"></script>-->
+<script type="text/javascript">
+var robot = document.getElementsByClassName('svg4')[0];
+	robot.addEventListener("click", monAnimation);
+
+	function monAnimation(){
+		var largeur = 200;
+
+		var id = setInterval(frame, 2);
+		function frame(){
+			if(largeur == 400){
+				clearInterval(robot);
+			}else{
+				largeur ++;
+				robot.style.width = largeur+'px';
+			}
+		}
+	}
+
+	var kiwi = document.getElementsByClassName('svg5')[0];
+	kiwi.addEventListener("click", kiwianimation);
+
+	function kiwianimation(evt){
+		console.log(evt.target)
+		var opacite = 1;
+
+		var id = setInterval(frame, 10);
+		function frame(){
+			if (opacite <= 0) {
+				clearInterval(opacite);
+			} else {
+				opacite -= 0.01;
+				evt.target.style.opacity = opacite;
+			}
+		}
+	}
+</script>
+
 </body>
 </html>

@@ -272,23 +272,32 @@ h1 {
     }
 }
 
-.svg3{
+.svg2{
     path{
-        animation: lignesAnimees 5s linear infinite;
+        stroke-dasharray: 20;
+        animation: lignesanimees 5s linear infinite;
     }
 
-    @keyframes lignesAnimees{
+    @keyframes lignesanimees{
         to{
             stroke-dashoffset: 100;
         }
     }
 }
 
-.svg4{
+.svg3{
     width: 100px;
     transition: transform 2s;
 }
 
-.svg4:hover{
+.svg3:hover{
     transform: rotate(180deg);
+}
+
+.svg4{
+    width: 200px;
+}
+
+.svg5{
+    width: 200px;
 }

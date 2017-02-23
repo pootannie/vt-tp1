@@ -235,3 +235,188 @@ Total 8 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/pootannie/vt-exercice06
    237628d..1863423  master -> master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "initialisation du projet + ajout des svg"
+On branch master
+
+Initial commit
+
+Untracked files:
+        acces.txt
+        cmd-historique.txt
+        img/
+        index.html
+        styles/
+
+nothing added to commit but untracked files present
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ add .
+bash: add: command not found
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Annie/veilleTechnologique/TP1/.git/
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        acces.txt
+        cmd-historique.txt
+        img/
+        index.html
+        styles/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "initialisation du projet + ajout des svg"
+On branch master
+
+Initial commit
+
+Untracked files:
+        acces.txt
+        cmd-historique.txt
+        img/
+        index.html
+        styles/
+
+nothing added to commit but untracked files present
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in img/versdeterre.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in styles/style.css.
+The file will have its original line endings in your working directory.
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   acces.txt
+        new file:   cmd-historique.txt
+        new file:   img/1.jpg
+        new file:   img/2.jpg
+        new file:   img/3.png
+        new file:   img/4.jpg
+        new file:   img/5.jpg
+        new file:   img/6.jpg
+        new file:   img/bg.jpg
+        new file:   img/drone_a.png
+        new file:   img/drone_b.png
+        new file:   img/exercice06.svg
+        new file:   img/kiwi.svg
+        new file:   img/logo.png
+        new file:   img/logo.svg
+        new file:   img/luigi.svg
+        new file:   img/mounts_1.png
+        new file:   img/mounts_2.png
+        new file:   img/mounts_3.png
+        new file:   img/mounts_4.png
+        new file:   img/robot.svg
+        new file:   img/versdeterre.svg
+        new file:   index.html
+        new file:   styles/style.css
+        new file:   styles/style.less
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git commit -m "initialisation du projet + ajout des svg"
+[master (root-commit) 72f4d60] initialisation du projet + ajout des svg
+ 25 files changed, 1443 insertions(+)
+ create mode 100644 acces.txt
+ create mode 100644 cmd-historique.txt
+ create mode 100644 img/1.jpg
+ create mode 100644 img/2.jpg
+ create mode 100644 img/3.png
+ create mode 100644 img/4.jpg
+ create mode 100644 img/5.jpg
+ create mode 100644 img/6.jpg
+ create mode 100644 img/bg.jpg
+ create mode 100644 img/drone_a.png
+ create mode 100644 img/drone_b.png
+ create mode 100644 img/exercice06.svg
+ create mode 100644 img/kiwi.svg
+ create mode 100644 img/logo.png
+ create mode 100644 img/logo.svg
+ create mode 100644 img/luigi.svg
+ create mode 100644 img/mounts_1.png
+ create mode 100644 img/mounts_2.png
+ create mode 100644 img/mounts_3.png
+ create mode 100644 img/mounts_4.png
+ create mode 100644 img/robot.svg
+ create mode 100644 img/versdeterre.svg
+ create mode 100644 index.html
+ create mode 100644 styles/style.css
+ create mode 100644 styles/style.less
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git log
+commit 72f4d60e29468acde762ede1f3473c782e996d54
+Author: Annie Vu <annievu9@gmail.com>
+Date:   Tue Feb 21 17:14:37 2017 -0500
+
+    initialisation du projet + ajout des svg
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github.com/pootannie/vt-tp1
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/pootannie/vt-tp1 master
+
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github.com/pootannie/vt-tp1 master
+Counting objects: 29, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (29/29), 4.15 MiB | 2.10 MiB/s, done.
+Total 29 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/pootannie/vt-tp1
+ * [new branch]      master -> master
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git add .
+
+Annie@Annie MINGW64 ~/veilleTechnologique/TP1 (master)
+$ git push https://github.com/pootannie/vt-tp1 master
+Everything up-to-date
